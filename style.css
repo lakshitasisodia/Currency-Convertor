@@ -225,7 +225,7 @@ img {
 
     .main-content {
         height: auto;
-        width: 70vh;
+        width: auto;
         flex-direction: column;
     }
 
