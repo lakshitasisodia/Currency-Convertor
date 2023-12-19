@@ -1,0 +1,266 @@
+* {
+padding: 0;
+margin: 0;
+
+}
+body{
+background-color:#A5D7E8 ;
+perspective: 800px;
+}
+.content{
+    background-color:#03001C ;
+    height: 90vh;
+width: auto;
+margin-top: 5vh;
+margin-bottom: 5vh;
+margin-left: 5vh;
+margin-right: 5vh;
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items:center;
+padding: 20px;
+border-radius: 50px;
+transform: scale(0.97);
+transition: transform 0.5s ease;
+box-shadow: 0px 8px 15px #03001C
+
+}
+.content:hover{
+transform: scale(1);
+}
+h1{
+    height: 70px;
+    width: auto;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    padding: 0%;
+    margin: 0%;
+}
+.main-content{
+    height:75vh;
+    width: 97vh;
+    background-color: #03001C; 
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.from{
+    height: 55vh;
+    width: 47vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:self-start;
+    background-color: #5B8FB9;
+    border-radius: 50px ;
+    padding: 20px;
+    margin-right: 5px;
+}
+.headoffrom{
+    height: 10vh;
+    font-size: 40px;
+   
+}
+.enteramount{
+    height: 10vh;
+}
+.countryselector{
+    border: none;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.countryselector select:focus {
+    outline: none; /*new thing*/
+}
+.countryselect{
+    height: 30px;
+    border: none;
+   border-radius: 40px 0px 0px 40px;
+}
+.countryselect select:focus {
+    outline: none;
+}
+.input{
+    height: 30px;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+    outline: none; /*new thing*/
+
+}
+.submit-button{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #E5B8F4;
+}
+.submit-button:hover{
+    transform: scale(1.10011);
+}
+.to{
+    height: 55vh;
+    width: 47vh;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:self-start;
+    background-color: #5B8FB9;
+    border-radius: 50px ;
+    padding: 20px;   
+}
+.headofto{
+    height: 10vh;
+    font-size: 40px;
+   
+}
+.amountwillbe{
+    height: 10vh;
+
+}
+.countryselector2{
+    border: none;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#countryselect2{
+   
+    height: 30px;
+    border: none;
+   border-radius: 40px 0px 0px 40px;
+}
+.countryselector2 select:focus {
+    outline: none;
+}
+.countryselect2 select:focus {
+    outline: none;
+}
+
+.output{
+    height: 30px;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+    outline: none;
+
+}
+
+   
+#image{
+    width: 45px;
+    height: 55px;
+  
+}
+#image2{
+    width: 45px;
+    height: 55px;
+}
+.useless{
+    height: 45px;
+   
+}
+/* Your existing CSS rules */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        /* Adjustments for smaller screens, if needed */
+        background-color: #A5D7E8;
+    }
+
+    .content {
+        /* Adjustments for smaller screens, if needed */
+        width: 90%;
+        margin: 5vh auto;
+        padding: 10px;
+    }
+
+    .main-content {
+        /* Adjustments for smaller screens, if needed */
+        flex-direction: column;
+    }
+
+    .from,
+    .to {
+        /* Adjustments for smaller screens, if needed */
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    /* Add more adjustments as needed for other elements */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Your existing CSS rules */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .content {
+       height: auto;
+        width: auto;
+        margin: 5vh auto;
+        padding: 10px;
+        transform: scale(0.9); /* Reset transform on hover for smaller screens */
+    }
+    .content:hover{
+        transform: scale(0.95);
+        }
+
+    h1 {
+        height: auto;
+        width: auto;
+    }
+
+    .main-content {
+        height: auto;
+        width: 70vh;
+        flex-direction: column;
+    }
+
+    .from,
+    .to {
+        width: auto;
+        margin: 0 0 10px 0;
+    }
+
+    .input,
+    .output {
+       
+        height: 7vh;
+    }
+    .countryselect,
+    .countryselect2 {
+
+        height: 7vh;
+    }
+  
+    .submit-button {
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    .countryselector,
+    .countryselector2 {
+
+        height: 7vh;
+    }
+
+    .useless {
+        
+        height: 30px;
+    }
+
+  
+}
